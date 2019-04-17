@@ -1,0 +1,3 @@
+[submodule "rice"]
+	path = rice
+	url = https://github.com/jasonroelofs/rice
