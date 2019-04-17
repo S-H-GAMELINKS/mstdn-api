@@ -1,3 +1,6 @@
 [submodule "rice"]
 	path = rice
 	url = https://github.com/jasonroelofs/rice
+[submodule "mastodon-cpp"]
+	path = mastodon-cpp
+	url = https://github.com/tastytea/mastodon-cpp.git
