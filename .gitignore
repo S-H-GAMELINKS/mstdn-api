@@ -1,3 +1,9 @@
 a.out
 toot.cpp
 .vscode/ipch
+Makefile
+mstdn.so
+mstdn.out
+mkmf.log
+toot.o
+toot.rb

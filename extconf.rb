@@ -1,2 +1,8 @@
 require 'mkmf-rice'
-create_makefile('mstdn-api')
+
+LIB_DIRS = [
+  '/usr/local/lib',
+]
+
+have_library("mastodon-cpp") 
+create_makefile('mstdn')
