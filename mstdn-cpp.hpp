@@ -1,9 +1,16 @@
 #ifndef _MSTDN_CPP_
 #define _MSTDN_CPP_
 
-#include "rice/Class.hpp"
-#include "rice/String.hpp"
+#include <unordered_map>
+#include <string>
+#include <mastodon-cpp/mastodon-cpp.hpp>
 
-Rice::Object mstdn_toot(const std::string& domain, const std::string& token);
+class Mstdn {
+        std::unordered_map<std::string, std::string> keys;
+    public:
+        Mstdn();
+        Mstdn(const std::string& domain, const std::string& token);
+        void mstdn_toot(const std::string& message);
+};
 
 #endif
