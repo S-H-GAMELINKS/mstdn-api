@@ -7,3 +7,5 @@ mstdn.out
 mkmf.log
 toot.o
 toot.rb
+mstdn.o
+mstdn-cpp.o
