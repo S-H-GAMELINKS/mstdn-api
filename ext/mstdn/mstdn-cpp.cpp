@@ -3,8 +3,6 @@
 #include <mastodon-cpp/mastodon-cpp.hpp>
 #include "mstdn-cpp.hpp"
 
-using namespace Rice;
-
 Mstdn::Mstdn() {}
 
 Mstdn::Mstdn(const std::string& domain, const std::string& token) {

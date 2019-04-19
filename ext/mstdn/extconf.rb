@@ -5,4 +5,4 @@ LIB_DIRS = [
 ]
 
 have_library("mastodon-cpp") 
-create_makefile('mstdn')
+create_makefile('mstdn/mstdn')

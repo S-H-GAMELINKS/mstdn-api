@@ -1,0 +1,27 @@
+PATH
+  remote: .
+  specs:
+    mstdn (0.1.0)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    dotenv (2.7.2)
+    minitest (5.11.3)
+    rake (10.5.0)
+    rake-compiler (1.0.7)
+      rake
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  bundler (~> 1.16)
+  dotenv
+  minitest (~> 5.0)
+  mstdn!
+  rake (~> 10.0)
+  rake-compiler
+
+BUNDLED WITH
+   1.17.2
