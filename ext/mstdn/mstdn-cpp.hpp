@@ -10,7 +10,7 @@ class Mstdn {
     public:
         Mstdn();
         Mstdn(const std::string& domain, const std::string& token);
-        void mstdn_toot(const std::string& message);
+        std::string mstdn_toot(const std::string& message);
 };
 
 #endif

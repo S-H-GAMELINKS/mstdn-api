@@ -12,4 +12,9 @@ class MstdnTest < Minitest::Test
   def test_init
     refute_nil Mstdn.new(ENV['DOMAIN'], ENV['TOKEN'])
   end
+
+  def test_toot
+    @mstdn = Mstdn.new(ENV['DOMAIN'], ENV['TOKEN'])
+    assert @mstdn.toot("test").is_a?(String)
+  end
 end

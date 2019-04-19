@@ -10,7 +10,7 @@ Mstdn::Mstdn(const std::string& domain, const std::string& token) {
     this->keys.emplace("token", token);
 }
 
-void Mstdn::mstdn_toot(const std::string& message) {
+std::string Mstdn::mstdn_toot(const std::string& message) {
     Mastodon::API masto(this->keys["domain"].c_str(), this->keys["token"].c_str());
 
     Mastodon::parameters parameters = {
@@ -18,4 +18,6 @@ void Mstdn::mstdn_toot(const std::string& message) {
         { "visibility", { "public" } }
     };
     masto.post(Mastodon::API::v1::statuses, parameters); 
+
+    return message;
 }
